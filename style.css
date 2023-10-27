@@ -1,15 +1,35 @@
-
-table{
-    background-color: rgb(255, 251, 0);
-    border: black;
+html {
+  height: 100%;
+  width: 100%;
 }
-table, th, td {
-    border: 2px solid black;
-    border-collapse: collapse;
-  }
-  span{
-    color: aqua;
-  }
-  div{
-    background-color: rgb(0, 0, 0);
-  }
+
+#power1{display: flex; background-color: gray; align-items: center; justify-content: center;}
+#power2{color: white;background-color: gray; text-align: center}
+#speed1{display: flex; background-color: gray; align-items: center; justify-content: center;}
+#speed2{color: white;background-color: gray; text-align: center}
+#sint1{display: flex; background-color: gray; align-items: center; justify-content: center;}
+#sint2{color: white;background-color: gray; text-align: center}
+#scan1{display: flex; background-color: gray; align-items: center; justify-content: center;}
+#scan2{color: white;background-color: gray; text-align: center}
+#def1{display: flex; background-color: gray; align-items: center; justify-content: center;}
+#def2{color: white;background-color: gray; text-align: center}
+#pt1{display: flex; background-color: gray; align-items: center; justify-content: center;}
+#pt2{color: white;background-color: gray; text-align: center}
+#pic{grid-column-end: 1; grid-row: span 6; scale: 100%; text-align: center; margin-top: +150px;}
+
+#grid{
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 25% 25%;
+  grid-template-rows: repeat(6, 150px);
+  background-color: #3b3b3f;
+}
+
+#button{
+  height: 150px;
+  width: 50px;
+}
+
+.body{
+  background-color: light;
+}

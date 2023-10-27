@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
 </head>
-<body>
-    <div>
-    <span>
-    <h1><center>Homepage</center></h1>
-    <font size = "8">
-    <p>Hello there, my name is Alan Zheng. 
-       I can't catch or throw well and I'm a student at <a href = "https://www.bths.edu/" title = "bths" target = "">bths</a></p>
-       <!-- <p>Hey I'm also bad at sports</p> -->
-        <h2>How to say my name:</h2>
-        <audio controls>
-            <Source src = "Audios/Record (online-voice-recorder.com).mp3" type="audio/mp3"/>
-        </audio> 
-    </span>
-       <table>
-        <span>
-        <p>Current period:</p>
-        </span>
-        <tr>
-            <td>One:<input type="checkbox" id="periods" name="One" value="Yes"/></td>
-            <td>Two:<input type="checkbox" id="periods" name="Two" value="Yes"/></td>
-            <td>Three:<input type="checkbox" id="periods" name="Three" value="Yes"/></td>
-            <td>Four:<input type="checkbox" id="periods" name="Four" value="Yes"/></td>
-            <td>Five:<input type="checkbox" id="periods" name="Five" value="Yes"/></td>
-        </tr>
-        <tr>
-            <td>Six:<input type="checkbox" id="periods" name="Six" value="Yes"/></td>
-            <td>Seven:<input type="checkbox" id="periods" name="Seven" value="Yes"/></td>
-            <td>Eight:<input type="checkbox" id="periods" name="Eight" value="Yes"/></td>
-            <td>Nine:<input type="checkbox" id="periods" name="Nine" value="Yes"/></td>
-            <td>Ten:<input type="checkbox" id="periods" name="Ten" value="Yes"/></td>
-        </tr>
-        </table>
-        <span>
-        <p>
-            <label for="date">Current Date and Time: </label>
-            <input id="date" name="date" type="datetime-local" />
-        </p>
-    </font>
+
+<body class = "body">
+  <center>
+    <h1>Robot Builder</h1>
+  </center>
+  <div id="grid">
+    <div id=pic>
+      <img src = "Images/Moby.png" alt = "Robots">
     </div>
-    </span>
-    <font size = "4">
-        <ul>
-            <li><p><a href = "favorites.html" title = "Interests" target = ""> My Interests</a> </p></li>
-            <li><p><a href = "skills.html" title = "Skills" target = ""> Skills I Can Teach Others</a> </p></li>
-            <li><p><a href = "spots.html" title = "Spots" target = ""> Places</a> </p></li>
-        </ul>
-    </font>
-    <p>&#169; 2023 Alan Zheng</p>
+    <div id=power1><button onclick="add(p)">
+        *PLUS*
+      </button>
+      <button onclick="sub(p)">
+        *MINUS*
+      </button>
+    </div>
+    <div id=power2>
+      <h2>Power</h2>
+      <h3>*INPUT VALUE*</h3>
+    </div>
+    <div id=speed1>
+      <button onclick="add(s)">
+        *PLUS*
+      </button>
+      <button>
+        *MINUS*
+      </button>
+    </div>
+    <div id=speed2>
+      <h2>Speed</h2>
+      <h3>*INPUT VALUE*</h3>
+    </div>
+    <div id="sint1">
+      <button onclick="add(si)">
+        *PLUS*
+      </button>
+      <button onclick="sub(si)">
+        *MINUS*
+      </button>
+    </div>
+    <div id="sint2">
+      <h2>Structural Integrity</h2>
+      <h3>*INPUT VALUE*</h3>
+    </div>
+    <div id=scan1>
+      <button onclick="toggle(scanner)">
+        *TOGGLE ON*
+      </button>
+    </div>
+    <div id=scan2>
+      <h2>Scanner</h2>
+      <h3>*INPUT VALUE*</h3>
+    </div>
+    <div id=def1>
+      <button onclick="toggle(defensive)">
+        *TOGGLE ON*
+      </button>
+    </div>
+    <div id=def2>
+      <h2>Defensive System</h2>
+      <h3>*ON OR OFF*</h3>
+    </div>
+    <div id=pt1>
+      <button onclick="toggle(solar)">Solar Power</button>
+      <button onclick="toggle(hydro)">Hydro Power</button>
+      <button onclick="toggle(nuclear)">Nuclear Power</button>
+    </div>
+    <div id=pt2>
+      <h2>Power Type</h2>
+      <h3>*POWER VALUE*</h3>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
